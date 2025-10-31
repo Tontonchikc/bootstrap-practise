@@ -16,22 +16,23 @@
     <header">
         <div class="container-sm">
             <div class="d-flex p-2" style="gap: 10px; padding: 15px 0; ">
-                <p><a class="link-opacity-50-hover" href="#">Головна</a></p>
-                <p><a class="link-opacity-50-hover" href="#">Причини</a></p>
-                <p><a class="link-opacity-50-hover" href="#">Статистика</a></p>
-                <p><a class="link-opacity-50-hover" href="#">Допомога</a></p>
+                <p><a class="link-opacity-50-hover" href="#main">Головна</a></p>
+                <p><a class="link-opacity-50-hover" href="#reasons">Причини</a></p>
+                <p><a class="link-opacity-50-hover" href="#statistic">Статистика</a></p>
+                <p><a class="link-opacity-50-hover" href="#help">Допомога</a></p>
             </div>
         </div>
         </header>
-        <section class="hero" style="padding: 100px 0;">
+        <section class="hero" style="padding: 100px 0;" id="main">
             <div class="container-sm">
                 <p class="fs-1 text-center">Від чого наші діти деградують?</p>
                 <button type="button" class="btn btn-outline-primary"
                     style="margin-left: auto; margin-right: auto; display: block;">ДОПОМОГА ВІД ДЕГРАДАЦІЇ</button>
             </div>
         </section>
-        <section class="second" style="padding: 80px 0;">
+        <section class="second" style="padding: 80px 0;" id="reasons">
             <div class="container-sm">
+                <p class="fs-1 text-center">Причини</p>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -148,8 +149,9 @@
                 </div>
             </div>
         </section>
-        <section style="padding: 80px 0;">
+        <section style="padding: 80px 0;" id="statistic">
             <div class="container-sm">
+                <p class="fs-1 text-center">Статистика</p>
                 <table class="table">
                     <thead>
                         <tr>
@@ -206,17 +208,22 @@
                 </table>
             </div>
         </section>
-        <section style="padding: 80px 0;">
+        <section style="padding: 80px 0;" id="help">
             <div class="container-sm">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Ваш емеіл</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Ваша проблема</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
+                <form action="">
+                    <div class="mb-3">
+                        <p class="fs-1 text-center">Напишіть проблему,ми допоможемо</p>
+                        <label for="exampleFormControlInput1" class="form-label">Ваш емеіл</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Ваша проблема</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Відправити</button>
+
+                    </div>
+                </form>
             </div>
         </section>
 
